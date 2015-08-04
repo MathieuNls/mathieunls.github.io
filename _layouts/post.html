@@ -4,7 +4,17 @@ layout: default
 
 <div class="post">
   <h1 class="post-title">{{ page.title }}</h1>
-  <span class="post-date">{{ page.date | date_to_string }}</span>
+    <div class="meta_wrapper">
+      <span class="post-date">{{ page.date | date_to_string }}</span>
+      <ul class="tag_list_in_post">
+      {% for tag in page.tags %}
+        <li class="tag_list_item">
+          <a class="tag_list_link" href="/tag/{{ tag }}">{{ tag }}</a>
+        </li>
+      {% endfor %}
+      </ul>
+    </div>
+  
   {{ content }}
   {% include post_footer.html %}
 </div>
