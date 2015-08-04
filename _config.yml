@@ -3,13 +3,13 @@ markdown:         redcarpet
 highlighter:      pygments
 
 # Permalinks
-permalink:        pretty
+permalink:        "/:title"
 relative_permalinks: true
 
 # Setup
 title:            Math.code
 tagline:          'Data &amp; and Computer Science, Hadoop, ElasticSearch, Solr, Magento, Node.js...'
-description:      'A brazen two-column <a href="http://jekyllrb.com" target="_blank">Jekyll</a> theme that pairs a prominent sidebar with uncomplicated content. Made by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>.'
+description:      'Hi there ! I am Mathieu Nayrolles, Ph.D student <a href="https://twitter.com/Concordia">@Concordia</a>, co-founder of <a href="https://twitter.com/MindUpOfficial">@Mindup</a> and <a href="https://twitter.com/ToolwatchApp">@Toolwatch</a> and <a href="/books">author</a>. <div class="circular"></div><br /> Follow me <a href="https://twitter.com/MathieuNls">@MathieuNls</a> or <a href="http://eepurl.com/bu-Kt1">subscribe</a> for daily posts on Data &amp Computer Science, Hadoop, ElasticSearch, Solr, Magento, Node.js...'
 url:              http://mathieunls.github.io
 baseurl:          /
 
@@ -17,10 +17,9 @@ author:
   name:           'Math.code'
   url:            https://twitter.com/MathieuNls
 
-paginate:         5
-
-# Custom vars
-version:          2.1.0
+paginate:         10
 
 github:
   repo:          https://github.com/MathieuNls/mathieunls.github.io
+
+excerpt_separator: "<!--more-->"
