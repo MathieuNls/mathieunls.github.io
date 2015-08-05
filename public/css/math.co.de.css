@@ -139,3 +139,7 @@ h1.site_title a{
   float: left;
   width: 130px;
 }
+
+.page p{
+  text-align: justify;
+}
