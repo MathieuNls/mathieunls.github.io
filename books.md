@@ -4,7 +4,7 @@ title: Books
 ---
 
 <p class="message">
-  Hey there! Over the years, I've been trusted by <a href="https://twitter.com/PacktPub">@PacktPub</a> and <a href="https://twitter.com/Inkstall">@Inkstall</a> to write 4 different books. In other words, I am a lucky fellow :) <br /> You can check out posts tagged <a href="/tag/Xamarin/">Xamarin</a>, <a href="/tag/Solr/">Solr</a> or <a href="/tag/Magento/">Magento</a> for free excerpts.
+  Hey there! Over the years, I've been trusted by <a href="https://twitter.com/PacktPub">@PacktPub</a> and <a href="https://twitter.com/Inkstall">@Inkstall</a> to write 4 different books. In other words, I am a lucky fellow :). You can check out posts tagged <a href="/tag/Xamarin/">Xamarin</a>, <a href="/tag/Solr/">Solr</a> or <a href="/tag/Magento/">Magento</a> for free excerpts.
 </p>
 
 ## Xamarin Studio for Android Programming: A C# Cookbook

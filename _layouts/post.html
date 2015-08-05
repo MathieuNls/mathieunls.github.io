@@ -2,6 +2,22 @@
 layout: default
 ---
 
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "NewsArticle",
+  "headline": "{{ page.title }}",
+  "alternativeHeadline": "{{ page.title }}",
+  "image": [
+    "thumbnail1.jpg",
+    "thumbnail2.jpg"
+  ],
+  "datePublished": "{{ page.date | date_to_xmlschema }}",
+  "description": "{{ excerpt | xml_escape }}",
+  "articleBody": "{{ content | xml_escape }}"
+}
+</script>
+
 <div class="post">
   <h1 class="post-title">{{ page.title }}</h1>
     <div class="meta_wrapper">

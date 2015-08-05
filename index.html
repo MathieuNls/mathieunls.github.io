@@ -3,6 +3,14 @@ layout: default
 title: Home
 ---
 
+<script type="application/ld+json">
+  { "@context" : "http://schema.org",
+    "@type" : "Organization",
+    "name" : "Math.code",
+    "url" : "https://math.co.de"
+  }
+</script>
+
 <div class="posts">
   {% for post in paginator.posts %}
   <div class="post">
