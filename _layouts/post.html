@@ -9,11 +9,10 @@ layout: default
   "headline": "{{ page.title }}",
   "alternativeHeadline": "{{ page.title }}",
   "image": [
-    "thumbnail1.jpg",
-    "thumbnail2.jpg"
+    "{{ page.img }}"
   ],
   "datePublished": "{{ page.date | date_to_xmlschema }}",
-  "description": "{{ excerpt | xml_escape }}",
+  "description": "{{ page.description }}",
   "articleBody": "{{ content | xml_escape }}"
 }
 </script>

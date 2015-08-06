@@ -14,6 +14,17 @@
     {% endif %}
   </title>
 
+  <meta name="description" content="
+    {% if page.description %}
+      {{ page.description }}
+    {% else %}
+      Hi there ! I am Mathieu Nayrolles, Ph.D student @Concordia, co-founder of @Mindup &amp; @Toolwatch and this my personal blog about Data &amp Computer Sciences, Hadoop, ElasticSearch, Solr, Magento, Node.js, Xamarin, CI and more...
+    {% endif %}
+  " />
+  <meta name="keywords" content="Data Science, Computer Science, Hadoop, ElasticSearch, Solr, Magento, Node.js, Xamarin, CI" />
+  <meta name="robots" content="index, follow">
+  <meta name="revisit-after" content="3 days">
+
   <!-- CSS -->
   <link rel="stylesheet" href="{{ site.baseurl }}public/css/poole.css">
   <link rel="stylesheet" href="{{ site.baseurl }}public/css/syntax.css">
@@ -31,4 +42,6 @@
 
   <!-- RSS -->
   <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+
 </head>
+

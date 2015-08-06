@@ -7,7 +7,7 @@ permalink:        "/:title"
 relative_permalinks: true
 
 # Setup
-title:            Math.code
+title:            Mathieu Nayrolles' Blog
 tagline:          'Data &amp; and Computer Sciences, Hadoop, ElasticSearch, Solr, Magento, Node.js, Xamarin, CI and more...'
 description:      'Hi there ! I am Mathieu Nayrolles, Ph.D student <a href="https://twitter.com/Concordia">@Concordia</a>, co-founder of <a href="https://twitter.com/MindUpOfficial">@Mindup</a> &amp; <a href="https://twitter.com/ToolwatchApp">@Toolwatch</a> and published <a href="/books">author</a>. <div class="circular"></div><br /> Follow me <a href="https://twitter.com/MathieuNls">@MathieuNls</a> or <a href="http://eepurl.com/bu-Kt1">subscribe</a> for daily posts on Data &amp Computer Sciences, Hadoop, ElasticSearch, Solr, Magento, Node.js, Xamarin, CI and more...'
 url:              http://mathieunls.github.io
