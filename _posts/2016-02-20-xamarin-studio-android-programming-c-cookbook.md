@@ -5,7 +5,7 @@ tags:
 - Xamarin
 - Android
 - c
-description: Xamarin Studio for Android Programming: A C&#35;Cookbook
+description: Xamarin Studio for Android Programming&#58; A C&#35;Cookbook
 ---
 
 Once again, I've been trusted by <a href="https://twitter.com/PacktPub">@PacktPub</a> for one of their books ! Let's see what's inside *Xamarin Studio for Android Programming: A C&#35; Cookbook* and get 50% of with the **XSAPC&#35;C50** discount code until March, 11th 2016.
