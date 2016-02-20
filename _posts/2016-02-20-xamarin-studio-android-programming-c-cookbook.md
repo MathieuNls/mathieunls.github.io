@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Xamarin Studio for Android Programming: A C&#35;Cookbook
+title: Xamarin Studio for Android Programming&#58; A C&#35;Cookbook
 tags:
 - Xamarin
 - Android
