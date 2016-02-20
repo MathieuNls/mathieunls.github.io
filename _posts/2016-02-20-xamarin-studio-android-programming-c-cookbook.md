@@ -9,6 +9,7 @@ description: How we integrated Github, Travis and Heroku at toolwatch for a full
 ---
 
 Once again, I've been trusted by <a href="https://twitter.com/PacktPub">@PacktPub</a> for one of their books ! Let's see what's inside *Xamarin Studio for Android Programming: A C# Cookbook* and get 50% of with the **XSAPC#C50** discount code until March, 11th 2016.
+
 <!--more-->
 
 ## Xamarin Studio for Android Programming: A C# Cookbook
