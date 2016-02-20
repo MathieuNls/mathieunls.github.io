@@ -9,7 +9,7 @@ title: Books
 
 ## Xamarin Studio for Android Programming: A C# Cookbook
 
-<p><img style="float: right; padding:20px" src="/public/coming soon mockup_OT_27.png" alt="Book Xamarin Studio for Android Programming: A C# Cookbook"></p>
+<p><img style="width:200px; float: right; padding:20px" src="/public/Xamarin-Studio-for-Android-Programming-A-C-Cookbook.jpg" alt="Book Xamarin Studio for Android Programming: A C# Cookbook"></p>
 
 #### About This Book
 
@@ -42,7 +42,7 @@ Starting with introducing Xamarin studio, its underlying technologies and the An
 [Buy Here](https://www.packtpub.com/application-development/xamarin-studio-android-programming-c-cookbook)
 
 
-## Mastering Apache Solr: A practical guide to get to grips with Apache Solr 
+## Mastering Apache Solr: A practical guide to get to grips with Apache Solr
 
 <p><img style="float: right; padding:20px" src="/public/book_mas.jpg" alt="Book Mastering Apache Solr"></p>
 

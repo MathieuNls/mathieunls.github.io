@@ -1,11 +1,11 @@
 ---
 layout: post
-title: Xamarin Studio for Android Programming&#58; A C&#35;Cookbook
+title: Xamarin Studio for Android Programming&#58; A C&#35; Cookbook
 tags:
 - Xamarin
 - Android
 - c
-description: Xamarin Studio for Android Programming&#58; A C&#35;Cookbook
+description: Xamarin Studio for Android Programming&#58; A C&#35; Cookbook
 ---
 
 Once again, I've been trusted by <a href="https://twitter.com/PacktPub">@PacktPub</a> for one of their books ! Let's see what's inside *Xamarin Studio for Android Programming: A C&#35; Cookbook* and get 50% of with the **XSAPC&#35;C50** discount code until March, 11th 2016.
@@ -14,7 +14,7 @@ Once again, I've been trusted by <a href="https://twitter.com/PacktPub">@PacktPu
 
 ## Xamarin Studio for Android Programming: A C# Cookbook
 
-<p><img style="float: right; padding:20px" src="/public/Xamarin-Studio-for-Android-Programming-A-C-Cookbook.jpg" alt="Book Xamarin Studio for Android Programming: A C# Cookbook"></p>
+<p><img style="width:300px; float: right; padding:20px" src="/public/Xamarin-Studio-for-Android-Programming-A-C-Cookbook.jpg" alt="Book Xamarin Studio for Android Programming: A C# Cookbook"></p>
 
 #### About This Book
 
@@ -40,10 +40,10 @@ If you intend to develop Android applications using C# and Xamarin Studio capabi
 
 With more and more applications being developed nowadays, there is a need of a technology that allows to work across different platforms. Xamarin Studio is a one such integrated development environment. It's cross platform in two ways. It is available on Mac OS and Windows (no Linux support announced) and it is growing in demand as it allows the development of software for Mac OS, iOS, and Android.
 
+<p><img style="float: right; padding:20px" src="/public/xamarin-banner.jpg"></p>
+
 This book takes you through all the stages of application development, right from getting started with Xamarin and developing GUI to putting up your application in market. The recipes will help you in acquiring sufficient knowledge to go about creating applications.
 
 Starting with introducing Xamarin studio, its underlying technologies and the Android ecosystem, the book goes on to cover graphical aspect of creating Android applications. This is followed by data management. Then it explains how to interact with the Android OS and the phone hardware before finally concluding with mobile advertisements and Google Play. By the end of this book, you will have discovered all the specialities and curiosities related to developing Android application with Xamarin Studio.
-
-<p><img style="float: right; padding:20px" src="/public/xamarin-banner.jpg"></p>
 
 [Buy Here](https://www.packtpub.com/application-development/xamarin-studio-android-programming-c-cookbook)
