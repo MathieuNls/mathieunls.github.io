@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Xamarin Studio for Android Programming: A C# Cookbook
+title: Xamarin Studio for Android Programming: A C&#35;Cookbook
 tags:
 - Xamarin
 - Android
-- c#
-description: How we integrated Github, Travis and Heroku at toolwatch for a fully automatized deployment process.
+- c
+description: Xamarin Studio for Android Programming: A C&#35;Cookbook
 ---
 
-Once again, I've been trusted by <a href="https://twitter.com/PacktPub">@PacktPub</a> for one of their books ! Let's see what's inside *Xamarin Studio for Android Programming: A C# Cookbook* and get 50% of with the **XSAPC#C50** discount code until March, 11th 2016.
+Once again, I've been trusted by <a href="https://twitter.com/PacktPub">@PacktPub</a> for one of their books ! Let's see what's inside *Xamarin Studio for Android Programming: A C&#35; Cookbook* and get 50% of with the **XSAPC&#35;C50** discount code until March, 11th 2016.
 
 <!--more-->
 
