@@ -25,10 +25,10 @@ excerpt_separator: "<!--more-->"
 
 # Resume settings
 resume_avatar:                  "true"
-resume_name:                    "Mathieu Nayrolles"
+resume_name:                    "Mathieu L. Nayrolles"
 resume_title:                   "Electrical and Computer Engineering Ph.D Student, Computer Science Lecturer, Author, Entrepreneur"
 resume_contact_email:
-  "hello@math.co.de"
+  "mathieu.nayrolles@gmail.com"
 
 # use "yes" to display the email contact button,
 # "no" to display an "I'm not looking for work" message,
