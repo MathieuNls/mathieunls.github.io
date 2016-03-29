@@ -99,6 +99,8 @@ m[i,w]=max(m[i-1,w],m[i-1,w-w_i]+v_i) if w_i <= w.
   * Stock B will loose 80% next quarter.
   * Stock C will gain 220% next quarter.
 
+  (Github)[https://github.com/MathieuNls/knapsack.js/blob/master/knap.js]
+
 ### Exo 2
 
 The given pseudocode doesn't yield the result, i.e, **What is the maximum amount of money I can make ?**
