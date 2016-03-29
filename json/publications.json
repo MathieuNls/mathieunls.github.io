@@ -1,0 +1,242 @@
+[
+ {"authors":
+   [
+     {"lastname": "Nayrolles", "firstname": "Mathieu"},
+     {"lastname": "Palma", "firstname": "Francis"},
+     {"lastname": "Moha", "firstname": "Naouel"}
+   ],
+   "title":"SOA Antipatterns : An Approach for their Specification and Detection",
+   "venue": "International Journal of Cooperative Information Systems",
+   "volume":22,
+   "issue":4,
+   "year":2013,
+   "type": "journal",
+   "pages": "1-40"
+ },
+ {"authors":
+   [
+     {"lastname": "Nayrolles", "firstname": "Mathieu"},
+     {"lastname": "Hamou-Lhadj", "firstname": "Wahab"},
+     {"lastname": "Tahar", "firstname": "Sofiene"},
+     {"lastname": "Larsson", "firstname": "Alf"}
+   ],
+   "title":"A Bug Reproduction Approach Based on Directed Model Checking and Crash Traces",
+   "venue": "Journal of Software: Evolution and Process",
+   "volume":22,
+   "publisher":"Wiley",
+   "issue":4,
+   "year":2016,
+   "type": "journal",
+  "misc": "(Accepted For Publication)"
+ },
+ {"authors":
+   [
+     {"lastname": "Nayrolles", "firstname": "Mathieu"}
+   ],
+   "title":" Xamarin Studio for Android Programming: A C# Cookbook",
+   "publisher": "Packt Publishing",
+   "ISBN":9781849691406,
+   "year":2015,
+   "type": "book",
+   "pages": 480
+ },
+ {"authors":
+   [
+     {"lastname": "Prajapati", "firstname": "Y"},
+     {"lastname": "Ranapariya", "firstname": "V"}
+   ],
+   "title":"Java Hibernate Cookbook",
+   "publisher": "Packt Publishing",
+   "ISBN":9781784391904,
+   "year":2015,
+   "type": "book",
+   "pages": 92,
+   "misc": "(Technical Reviewer)"
+ },
+ {"authors":
+   [
+     {"lastname": "Nayrolles", "firstname": "Mathieu"}
+   ],
+   "title":"Magento Site Performance Optimization",
+   "publisher": "Packt Publishing",
+   "ISBN":9781782165422,
+   "year":2015,
+   "type": "book",
+   "pages": 92
+ },
+ {"authors":
+   [
+     {"lastname": "Nayrolles", "firstname": "Mathieu"}
+   ],
+   "title":"Mastering Apache Solr. Inkstall Publishing",
+   "publisher": "Inkstall Publishing",
+   "ISBN":"B00K67YYLS",
+   "year":2014,
+   "type": "book",
+   "pages": 152
+ },
+ {"authors":
+   [
+     {"lastname": "Nayrolles", "firstname": "Mathieu"}
+   ],
+   "title":"Instant Magento Performance Optimization How-to",
+   "publisher": "Packt Publishing",
+   "ISBN":9781782165422,
+   "year":2013,
+   "type": "book",
+   "pages": 56
+ },
+ {"authors":
+   [
+     {"lastname": "Kent", "firstname": "R"}
+   ],
+   "title":"Instant Magento Shipping How-to. Packt Publishing",
+   "publisher": "Packt Publishing",
+   "ISBN":139781782165408,
+   "year":2013,
+   "type": "book",
+   "pages": 58,
+   "misc": "(Technical Reviewer)"
+ },
+ {"authors":
+   [
+     {"lastname": "Nayrolles", "firstname": "Mathieu"},
+     {"lastname": "Moha", "firstname": "Naouel"},
+     {"lastname": "Valtchev", "firstname": "Petko"}
+
+   ],
+   "title":"Improving SOA Antipatterns Detection in Service Based Systems by Mining Execution Traces",
+   "venue": "Working Conference on Reverse Engineering",
+   "publisher": "IEEE",
+   "year":2014,
+   "type": "conf",
+   "pages": "321-330"
+ },
+ {"authors":
+   [
+     {"lastname": "Nayrolles", "firstname": "Mathieu"},
+     {"lastname": "Palma", "firstname": "Francis"},
+     {"lastname": "Moha", "firstname": "Naouel"},
+     {"lastname": "Guéhéneuc", "firstname": "Yann-Gael"}
+   ],
+   "title":"SODA : A Tool Support for the Detection of SOA Antipatterns",
+   "venue": "International Conference on Service Oriented Computing LNCS 7759",
+   "publisher": "Springer",
+   "year":2014,
+   "type": "conf",
+   "pages": "451-456"
+ },
+ {"authors":
+   [
+     {"lastname": "Moha", "firstname": "Naouel"},
+     {"lastname": "Palma", "firstname": "Francis"},
+     {"lastname": "Nayrolles", "firstname": "Mathieu"},
+     {"lastname": "Joyen-Conseil", "firstname": "Benjamin"},
+     {"lastname": "Guéhéneuc", "firstname": "Yann-Gael"},
+     {"lastname": "Beaudry", "firstname": "Benoit"},
+     {"lastname": "Jézéquel", "firstname": "Jean-Marc"}
+   ],
+   "title":"Specification and Detection of SOA Antipatterns",
+   "venue": " In International Conference on Service Oriented Computing",
+   "publisher": "Springer",
+   "year":2014,
+   "type": "conf",
+   "pages": "1-16",
+   "misc": "Best Paper Award - Runner-up"
+ },
+ {"authors":
+   [
+     {"lastname": "Nayrolles", "firstname": "Mathieu"},
+     {"lastname": "Moha", "firstname": "Naouel"},
+     {"lastname": "Valtchev", "firstname": "Petko"},
+     {"lastname": "Hamou-Lhadj", "firstname": "Wahab"}
+   ],
+   "title":"Towards Quality-Driven SOA Systems Refactoring through Planning",
+   "venue": "E-Technologies",
+   "publisher": "Springer",
+   "year":2015,
+   "type": "conf",
+   "pages": "269-284"
+ },
+ {"authors":
+   [
+     {"lastname": "Nayrolles", "firstname": "Mathieu"},
+     {"lastname": "Hamou-Lhadj", "firstname": "Wahab"},
+     {"lastname": "Tahar", "firstname": "Sofiene"},
+     {"lastname": "Larsson", "firstname": "Alf"}
+   ],
+   "title":"A Bug Reproduction Approach Using Crash Traces and Directed Model Checking",
+   "venue": "International Conference on Software Analysis, Evolution, and Reengineering (SANER'15)",
+   "publisher": "IEEE",
+   "year":2015,
+   "type": "conf",
+   "pages": "101-110",
+   "misc": "Best Paper Award"
+ },
+ {"authors":
+   [
+     {"lastname": "Maiga", "firstname": "Abdou"},
+     {"lastname": "Hamou-Lhadj", "firstname": "Wahab"},
+     {"lastname": "Nayrolles", "firstname": "Mathieu"},
+     {"lastname": "Sabor", "firstname": "Koroosh"},
+     {"lastname": "Larsson", "firstname": "Alf"}
+   ],
+   "title":"An Empirical Study on the Handling of Crash Reports in a Large Software Company: An Experience Report",
+   "venue": " International Conference on Software Maintenance and Evolution (ICSME)",
+   "publisher": "IEEE",
+   "year":2015,
+   "type": "conf",
+   "pages": "342-351"
+ },
+ {"authors":
+   [
+     {"lastname": "Nayrolles", "firstname": "Mathieu"},
+     {"lastname": "Hamou-Lhadj", "firstname": "Wahab"}
+   ],
+   "title":"BUMPER: Bug Metarepository Search Engine for Developers and Researchers",
+   "venue": "Consortium for Software Engineering Research Fall ",
+   "year":2015,
+   "type": "conf"
+ },
+ {"authors":
+   [
+     {"lastname": "Nayrolles", "firstname": "Mathieu"},
+     {"lastname": "Hamou-Lhadj", "firstname": "Wahab"}
+   ],
+   "title":"BUMPER: A Tool to Cope with Natural Language Search of Millions Bugs and Fixes",
+   "venue": "International Conference on Software Analysis, Evolution, and Reengineering (SANER'16)",
+   "publisher": "IEEE",
+   "year":2016,
+   "type": "conf",
+   "misc": "(Accepted)"
+ },
+ {"authors":
+   [
+     {"lastname": "Nayrolles", "firstname": "Mathieu"}
+   ],
+   "title":"Improving SOA Antipattern Detection in Service Based Systems by Mining Execution Traces",
+   "year":2015,
+   "type": "misc",
+   "misc": "Master Thesis. UQAM"
+ },
+ {"authors":
+   [
+     {"lastname": "Nayrolles", "firstname": "Mathieu"}
+   ],
+   "title":"Darwin IT: Problem resolution inspired by the Nature",
+   "year":2013,
+   "type": "misc",
+   "misc": "Master Thesis. EXIA.CESI"
+ },
+ {"authors":
+   [
+     {"lastname": "Nayrolles", "firstname": "Mathieu"},
+     {"lastname": "Delorme", "firstname": "Benoit"},
+     {"lastname": "Schmitt", "firstname": "Mathieu"}
+   ],
+   "title":"Pentesting with Backtrack",
+   "year":2013,
+   "type": "misc",
+   "misc": "BackTrack Compendium – PenTest 2013 vol 3 No.3 2084-1116 pp 110 - 128"
+ }
+]

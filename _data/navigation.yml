@@ -1,10 +1,15 @@
 # Site navigation links
-
-- title: About
-  url: /about/
-
-- title: Sample Posts
+- title: Blog Posts
   url: /posts/
 
-- title: Theme Setup
-  url: /theme-setup/
+- title: Courses
+  url: /courses/
+
+- title: Books
+  url: /books/
+
+- title: Projects
+  url: /projects/
+
+- title: About Me
+  url: /resume/
