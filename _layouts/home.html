@@ -7,6 +7,55 @@
 {% include _head.html %}
 </head>
 
+<style media="screen">
+.tag{
+  float: left;
+  margin-right: 10px;
+  color: black;
+  padding: 9px;
+  background: #D4D4D4;
+  font-weight: 900;
+  border-radius: 4px;
+}
+
+.tag:hover{
+  cursor: pointer;
+}
+
+.tag:hover .tag-hover {
+  display: block;
+}
+
+.tag .tag-hover{
+  display: none;
+  position: absolute;
+  width: 400px;
+  margin-top: -104px;
+  background: #D4D4D4;
+  margin-left: -10px;
+  border-radius: 4px;
+  font-weight: 500;
+  padding: 10px;
+}
+
+.tag .tag-hover:after {
+  top: 100%;
+  left: 8.5%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-color: rgba(212, 212, 212, 0);
+  border-top-color: #D4D4D4;
+  border-width: 10px;
+  margin-left: -30px;
+}
+
+
+</style>
+
 <body class="home">
 
 {% include _browser-upgrade.html %}
@@ -33,11 +82,24 @@
     {% include _author-bio.html %}
   </div>
   <div id="index">
-    <h3><a href="{{ site.url}}/posts/">Recent Posts and courses</a></h3>
-    {% for post in site.posts limit:5 %}
+    <h3><a href="{{ site.url}}/posts/">Recent Entries</a></h3>
+    {% for post in site.posts limit:10 %}
     <article>
+      {% if post.categories contains "blog" %}
+        <span class="tag"><a href="/posts/">B</a><span class="tag-hover">This entry is tagged blog. It contains a classical blog post.</span></span>
+      {% elsif post.categories contains "researches" %}
+        <span class="tag"><a href="/research/">R</a><span class="tag-hover">This entry is tagged research. It contains a peer-reviewed paper.</span></span>
+      {% elsif post.categories contains "cours" %}
+        <span class="tag"><a href="/courses/">C</a><span class="tag-hover">This entry is tagged class. It contains a lecture and some exercices.</span></span>
+      {% endif %}
+
       {% if post.link %}
-        <h2 class="link-post"><a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a> <a href="{{ post.link }}" target="_blank" title="{{ post.title }}"><i class="fa fa-link"></i></a></h2>
+        <h2 class="link-post"><a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a> <a href="{{ post.link }}" target="_blank" title="{{ post.title }}"><i class="fa fa-link"></i></a><p style="
+    margin-top: 5px;
+    color: #333332;
+    font-weight: normal;
+">{{ post.excerpt | strip_html | truncate: 160 }}</p></h2>
+
       {% else %}
         <h2><a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h2>
         <p>{{ post.excerpt | strip_html | truncate: 160 }}</p>

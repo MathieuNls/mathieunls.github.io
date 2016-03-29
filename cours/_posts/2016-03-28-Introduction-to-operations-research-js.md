@@ -12,6 +12,7 @@ image:
   feature: knap.jpg
   credit: Wikipedia
   creditlink: https://commons.wikimedia.org/wiki/File:%D0%9A%D0%BE%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA%D0%BE%D0%B2._%D0%98%D1%81%D1%82%D0%BE%D1%80%D0%B8%D1%8F_%D0%BE%D0%B4%D0%BD%D0%BE%D0%B3%D0%BE_%D0%B8%D0%B7%D0%BE%D0%B1%D1%80%D0%B5%D1%82%D0%B5%D0%BD%D0%B8%D1%8F_(1938)._%D1%81%D1%82%D1%80._55.jpg
+excerpt: Operations research, or operational research in British usage, is a discipline that deals with the application of advanced analytical methods to help make better decisions. Further, the term 'operational analysis'
 ---
 {% include _toc.html %}
 
