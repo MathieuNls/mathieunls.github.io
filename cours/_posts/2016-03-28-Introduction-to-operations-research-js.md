@@ -1,17 +1,21 @@
 ---
 layout: post
-title: An introduction to operations research using Javascript
+title: An introduction to operations research using javascript Javascript
 tags:
 - javascript
-- mathematics
 - linear regression
-- dynamic programming
 - simplex
-description: An introduction to operations research using Java.
+- dynamic programming
+- knapsack
+description: An introduction to operations research using Javascript
+image:
+  feature: knap.jpg
+  credit: Wikipedia
+  creditlink: https://commons.wikimedia.org/wiki/File:%D0%9A%D0%BE%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA%D0%BE%D0%B2._%D0%98%D1%81%D1%82%D0%BE%D1%80%D0%B8%D1%8F_%D0%BE%D0%B4%D0%BD%D0%BE%D0%B3%D0%BE_%D0%B8%D0%B7%D0%BE%D0%B1%D1%80%D0%B5%D1%82%D0%B5%D0%BD%D0%B8%D1%8F_(1938)._%D1%81%D1%82%D1%80._55.jpg
 ---
 {% include _toc.html %}
 
-## Preface
+# Preface
 
 *Operations research, or operational research in British usage, is a discipline that deals with the application of advanced analytical methods to help make better decisions. Further, the term 'operational analysis' is used in the British (and some British Commonwealth) military, as an intrinsic part of capability development, management and assurance. In particular, operational analysis forms part of the Combined Operational Effectiveness and Investment Appraisals (COEIA), which support British defense capability acquisition decision-making. * [^1]
 
@@ -29,12 +33,88 @@ x + y + z + w <= 40
 y - w <= 10
 {% endhighlight %}
 
-## Simplex algorithm
+In this practical introduction, we'll see how to use the Knapsack[^2] and the Simplex[^3] algorithms.
+
+# Knapsack
+
+*The knapsack problem or rucksack problem is a problem in combinatorial optimization: Given a set of items, each with a weight and a value, determine the number of each item to include in a collection so that the total weight is less than or equal to a given limit and the total value is as large as possible. It derives its name from the problem faced by someone who is constrained by a fixed-size knapsack and must fill it with the most valuable items.* [^2]
+
+[^2]: <https://www.wikiwand.com/en/Knapsack_problem#/0.2F1_Knapsack_Problem>
+
+## Solving
+
+0/1 knapsack problem
+A similar dynamic programming solution for the 0/1 knapsack problem also runs in pseudo-polynomial time. Assume w1,w,...,wn. W are strictly positive integers. Define m[i,w] to be the maximum value that can be attained with weight less than or equal to w using items up to i (first i items).
+
+We can define m[i,w] recursively as follows:
+
+{% highlight js %}
+m[0,w]=0
+m[i,w]=m[i-1,w] if w_i > w (the new item is more than the current weight limit)
+m[i,w]=max(m[i-1,w],m[i-1,w-w_i]+v_i) if w_i <= w.
+{% endhighlight %}
+
+The solution can then be found by calculating m[n,W]. To do this efficiently we can use a table to store previous computations.
+
+## Implementation
+
+The Implementation of the knapsack algorithm with dynamic programming techniques is fairly simple:
+
+
+{% highlight js %}
+// Input:
+// Values (stored in array v)
+// Weights (stored in array w)
+// Number of distinct items (n)
+// Knapsack capacity (W)
+
+for j from 0 to W do:
+    m[0, j] := 0
+
+ for i from 1 to n do:
+     for j from 0 to W do:
+         if w[i-1] > j then:
+             m[i, j] := m[i-1, j]
+         else:
+             m[i, j] := max(m[i-1, j], m[i-1, j-w[i-1]] + v[i-1])
+{% endhighlight %}
+
+First, we initialize the matrix to 0, then, for each case, we simply apply the following :
+
+{% highlight js %}
+m[0,w]=0
+m[i,w]=m[i-1,w] if w_i > w (the new item is more than the current weight limit)
+m[i,w]=max(m[i-1,w],m[i-1,w-w_i]+v_i) if w_i <= w.
+{% endhighlight %}.
+
+### Exo 1
+
+* Implement the knapsack in javascript.
+* Test it with the following variables :
+  * I have 680$ to invest
+  * I can buy up to 100 stock A at 50$
+  * I can buy up to 10 stock B at 80$
+  * I can buy up to 18 stock C at 12$
+  * Stock A will gain 10% next quarter.
+  * Stock B will loose 80% next quarter.
+  * Stock C will gain 220% next quarter.
+
+### Exo 2
+
+The given pseudocode doesn't yield the result, i.e, **What is the maximum amount of money I can make ?**
+Implement a function that reads the computed matrix for the result.
+
+### Exo 3
+
+Finally, we know what is the maximum of money we can make given the preconditions. However, we still don't know which stock to buy.
+Implement a function that reads the computed matrix for the amount of stock to buy.
+
+# Simplex algorithm
 
 *In mathematical optimization, Dantzig's simplex algorithm (or simplex method) is a popular algorithm for linear programming. The journal Computing in Science and Engineering listed it as one of the top 10 algorithms of the twentieth century.
-The name of the algorithm is derived from the concept of a simplex and was suggested by T. S. Motzkin. Simplices are not actually used in the method, but one interpretation of it is that it operates on simplicial cones, and these become proper simplices with an additional constraint. The simplicial cones in question are the corners (i.e., the neighborhoods of the vertices) of a geometric object called a polytope. The shape of this polytope is defined by the constraints applied to the objective function.* [^2]
+The name of the algorithm is derived from the concept of a simplex and was suggested by T. S. Motzkin. Simplices are not actually used in the method, but one interpretation of it is that it operates on simplicial cones, and these become proper simplices with an additional constraint. The simplicial cones in question are the corners (i.e., the neighborhoods of the vertices) of a geometric object called a polytope. The shape of this polytope is defined by the constraints applied to the objective function.* [^3]
 
-[^2]: <https://www.wikiwand.com/en/Simplex_algorithm>
+[^3]: <https://www.wikiwand.com/en/Simplex_algorithm>
 
 To resolve a linear problem with the simplex method, we'll use simplex tableau.
 Simplex tableaus are matrices where the first row is the objective and the remaining rows the constraints.
@@ -86,7 +166,7 @@ so the minimum value of Z is −20.
 
 ## Implementation
 
-###Parse the input
+### Parse the input
 
 First thing first, we need to parse the input of an html textarea containing our linear problem.
 
@@ -111,7 +191,7 @@ y - w <= 10
 </html>
 {% endhighlight %}
 
-####Exo 1
+### Exo 1
 
 Write the function *createTableau*. This function produces a tableau for us to use in the following steps. The following input
 
@@ -204,13 +284,13 @@ function createTableau(inputId){
 }
 {% endhighlight %}
 
-###Add slack variables
+## Add slack variables
 
 *In general, a linear program will not be given in canonical form and an equivalent canonical tableau must be found before the simplex algorithm can start. This can be accomplished by the introduction of artificial variables. Columns of the identity matrix are added as column vectors for these variables. If the b value for a constraint equation is negative, the equation is negated before adding the identity matrix columns. This does not change the set of feasible solutions or the optimal solution, and it ensures that the slack variables will constitute an initial feasible solution. The new tableau is in canonical form but it is not equivalent to the original problem. So a new objective function, equal to the sum of the artificial variables, is introduced and the simplex algorithm is applied to find the minimum; the modified linear program is called the Phase I problem.*
 
-*The simplex algorithm applied to the Phase I problem must terminate with a minimum value for the new objective function since, being the sum of nonnegative variables, its value is bounded below by 0. If the minimum is 0 then the artificial variables can be eliminated from the resulting canonical tableau producing a canonical tableau equivalent to the original problem. The simplex algorithm can then be applied to find the solution; this step is called Phase II. If the minimum is positive then there is no feasible solution for the Phase I problem where the artificial variables are all zero. This implies that the feasible region for the original problem is empty, and so the original problem has no solution.*[^2]
+*The simplex algorithm applied to the Phase I problem must terminate with a minimum value for the new objective function since, being the sum of nonnegative variables, its value is bounded below by 0. If the minimum is 0 then the artificial variables can be eliminated from the resulting canonical tableau producing a canonical tableau equivalent to the original problem. The simplex algorithm can then be applied to find the solution; this step is called Phase II. If the minimum is positive then there is no feasible solution for the Phase I problem where the artificial variables are all zero. This implies that the feasible region for the original problem is empty, and so the original problem has no solution.*[^3]
 
-#### Exo 2
+### Exo 2
 
 Concretely, we want a function addSlackVariables doing the following:
 
@@ -249,9 +329,9 @@ which is a canonical tableau. We can begin the simplex algorithm.
 
 ### Pivots
 
-*The geometrical operation of moving from a basic feasible solution to an adjacent basic feasible solution is implemented as a pivot operation. First, a nonzero pivot element is selected in a nonbasic column. The row containing this element is multiplied by its reciprocal to change this element to 1, and then multiples of the row are added to the other rows to change the other entries in the column to 0. The result is that, if the pivot element is in row r, then the column becomes the r-th column of the identity matrix. The variable for this column is now a basic variable, replacing the variable which corresponded to the r-th column of the identity matrix before the operation. In effect, the variable corresponding to the pivot column enters the set of basic variables and is called the entering variable, and the variable being replaced leaves the set of basic variables and is called the leaving variable. The tableau is still in canonical form but with the set of basic variables changed by one element.*[^2]
+*The geometrical operation of moving from a basic feasible solution to an adjacent basic feasible solution is implemented as a pivot operation. First, a nonzero pivot element is selected in a nonbasic column. The row containing this element is multiplied by its reciprocal to change this element to 1, and then multiples of the row are added to the other rows to change the other entries in the column to 0. The result is that, if the pivot element is in row r, then the column becomes the r-th column of the identity matrix. The variable for this column is now a basic variable, replacing the variable which corresponded to the r-th column of the identity matrix before the operation. In effect, the variable corresponding to the pivot column enters the set of basic variables and is called the entering variable, and the variable being replaced leaves the set of basic variables and is called the leaving variable. The tableau is still in canonical form but with the set of basic variables changed by one element.*[^3]
 
-#### Exo 3
+### Exo 3
 
 To create a pivot, we need a pivot column and a pivot line. Here's the pseudocode to select the pivot column
 
@@ -316,7 +396,7 @@ function pivotOn(tab, row, col) {
 }
 {% endhighlight %}
 
-### Simplex Method
+## Simplex Method
 
 Here's the simplex method and the createTableau method.
 
@@ -403,3 +483,25 @@ x7=20
 {% endhighlight %}
 
 Meaning that the maximum value for p is **145**.
+
+# Correction
+
+## Knapsack
+
+## Simplex
+
+The final project is available at https://github.com/MathieuNls/simplex.js.
+The correction of the first exercice can be fetched with:
+
+{% highlight js %}
+git clone https://github.com/MathieuNls/simplex.js
+cd simplex.js
+git fetch --all
+git reset --hard origin/check-lp-input
+{% endhighlight %}
+
+For exo 2 and 3:
+
+{% highlight js %}
+git reset --hard origin/simplex
+{% endhighlight %}
