@@ -99,8 +99,6 @@ m[i,w]=max(m[i-1,w],m[i-1,w-w_i]+v_i) if w_i <= w.
   * Stock B will loose 80% next quarter.
   * Stock C will gain 220% next quarter.
 
-  (Github)[https://github.com/MathieuNls/knapsack.js/blob/master/knap.js]
-
 ### Exo 2
 
 The given pseudocode doesn't yield the result, i.e, **What is the maximum amount of money I can make ?**
@@ -489,6 +487,13 @@ Meaning that the maximum value for p is **145**.
 # Correction
 
 ## Knapsack
+
+The final project is available at https://github.com/MathieuNls/knapsack.js.
+The correction of the first exercice can be fetched with:
+
+* For exos 1 and 2: https://github.com/MathieuNls/knapsack.js/commit/f1781ec6f451ea7216d0421cb19dbf7b673899a0
+* For exo 3: https://github.com/MathieuNls/knapsack.js/blob/4d284670f52dc1b50ba93b96c793bf6b4ed9d398/knap.js
+
 
 ## Simplex
 
