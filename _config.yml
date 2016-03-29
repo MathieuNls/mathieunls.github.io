@@ -1,6 +1,6 @@
 # Site wide configuration
 
-title:            Site Title
+title:            Mathieu Nayrolles' Blog
 locale:           en_US
 url:
 
@@ -41,12 +41,12 @@ titlecase: true
 
 # Site owner
 owner:
-  name: Your Name
-  avatar: bio-photo.jpg
-  bio: "Describe your self."
-  email:
-  disqus-shortname:
-  twitter: #username
+  name: Mathieu Nls
+  avatar: mn.jpg
+  bio: 'Hi there ! I am Mathieu Nayrolles, Ph.D student <a href="https://twitter.com/Concordia">@Concordia</a>, co-founder of <a href="https://twitter.com/MindUpOfficial">@Mindup</a> &amp; <a href="https://twitter.com/ToolwatchApp">@Toolwatch</a> and published <a href="/books.html">author</a>. <br /> Follow me <a href="https://twitter.com/MathieuNls">@MathieuNls</a> or <a href="http://eepurl.com/bu-Kt1">subscribe</a> for daily posts on Data &amp Computer Sciences, Hadoop, ElasticSearch, Solr, Magento, Node.js, Xamarin, CI and more...'
+  email: mathieu.nayrolles@gmail.com
+  disqus-shortname: mathcode
+  twitter: MathieuNls
   facebook: #username
   google:
     plus: #username
@@ -55,8 +55,8 @@ owner:
     ad-client:
     ad-slot:
   bing-verify:
-  github: #username
-  stackoverflow: #123456/username   from a "http://stackoverflow.com/users/123456/username" link
+  github: MathieuNls
+  stackoverflow: 1871890/mathieu-nls
   linkedin: #username
   xing: #username
   instagram: #username
@@ -71,6 +71,44 @@ owner:
   weibo: #username
   flickr: #username
   codepen: #username
+
+
+# Resume settings
+resume_avatar:                  "true"
+resume_name:                    "Mathieu L. Nayrolles"
+resume_title:                   "Electrical and Computer Engineering Ph.D Student, Computer Science Lecturer, Author, Entrepreneur"
+resume_contact_email:
+  "mathieu.nayrolles@gmail.com"
+
+# use "yes" to display the email contact button,
+# "no" to display an "I'm not looking for work" message,
+# or remove the resume_looking_for_work option entirely
+# to leave blank
+resume_looking_for_work:        "yes"
+
+# Decide which sections to use
+# comment out to hide
+resume_section_experience:      true
+resume_section_education:       true
+resume_section_projects:        true
+resume_section_skills:          true
+resume_section_recognition:     true
+resume_section_links:           true
+resume_section_associations:    true
+
+# Resume social links
+# uncomment the options you wish to display, and add your own URL
+resume_social_links:
+  resume_github_url:            "https://github.com/MathieuNls/"
+  resume_twitter_url:           "http://twitter.com/MathieuNls"
+  #resume_dribbble_url:          "https://dribbble.com/jag"
+  # resume_facebook_url:          "insert Facebook URL here"
+  resume_linkedin_url:          "https://www.linkedin.com/in/mathieun"
+  # resume_instagram_url:         "insert your Instagram URL here"
+  resume_website_url:           "https://math.co.de"
+
+# Design settings
+resume_theme:                   default
 
 include: [".htaccess"]
 exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules", "Gemfile", "Gemfile.lock", "LICENSE", "README.md"]
