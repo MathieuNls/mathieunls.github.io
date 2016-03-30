@@ -1,6 +1,6 @@
 ---
 layout: post
-title: An introduction to operations research using javascript Javascript
+title: An introduction to operations research using Javascript
 tags:
 - javascript
 - linear regression

@@ -83,8 +83,8 @@
   </div>
   <div id="index">
     <h3><a href="{{ site.url}}/posts/">Recent Entries</a></h3>
-    {% for post in site.posts limit:10 %}
-    <article>
+    {% for post in site.posts %}
+    <article class="{{ post.categories }}">
       {% if post.categories contains "blog" %}
         <span class="tag"><a href="/posts/">B</a><span class="tag-hover">This entry is tagged blog. It contains a classical blog post.</span></span>
       {% elsif post.categories contains "researches" %}
