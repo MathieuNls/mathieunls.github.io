@@ -62,33 +62,7 @@ Notre classe abstraite animal avait manger(); définie en tant qu'abstract; cepe
 
 Modifier l'architecture afin qu’Animal soit une Interface; puis relancer le programme. Vous devez obtenir les mêmes résultats que lors de l'exercice 1.
 
-## Enumerateur
-
-([rappel](http://programmation-java.1sur1.com/Java/Tutoriels/Tiger5.0/enumeration.php))
-
-Très souvent, nous avons besoin d'utiliser des constantes. Les constantes demande une syntaxe relativement longue à saisir. Par ailleurs, certaines constantes correspondent à un tronc commun qu'il serait souhaitable de regrouper dans une même entité. C'est notamment le cas avec les cartes à jouer, les jours de la semaine, etc. Les énumérations permettent d'associer un ensemble de constantes et d'en faire un nouveau type. Les variables de ce nouveau type ne peuvent alors prendre une valeur, uniquement dans la liste des énumérations proposées.
-
 ### Exercice 3
-
-Créer une classe énumerateur de forme :
-
-{% highlight java %}
-enum Animaux {
-	// création (construction) de chaque énumérateur
-    Herbivores() , Carnivore() , Omnivore();   
-	/*
-	Partie à completer
-    */
-}
-{% endhighlight %}
-
-De sorte que l'on puisse faire
-
-{% highlight java %}
-Animaux.Herbivores.manger();
-{% endhighlight %}
-
-## Modélisation : Exercice Final
 
 Proposer et coder une architecture cohérente et pertinente pour représenter le schéma suivant :
 
