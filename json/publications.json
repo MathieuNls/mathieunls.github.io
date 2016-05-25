@@ -38,7 +38,7 @@
    "ISBN":9781849691406,
    "year":2015,
    "type": "book",
-   "pages": 480
+   "pages": 298
  },
  {"authors":
    [
@@ -51,6 +51,19 @@
    "year":2015,
    "type": "book",
    "pages": 92,
+   "misc": "(Technical Reviewer)"
+ },
+ {"authors":
+   [
+     {"lastname": "Williams", "firstname": "B"},
+     {"lastname": "Williams", "firstname": "C"}
+   ],
+   "title":"Learning Magento 2 Administration",
+   "publisher": "Packt Publishing",
+   "ISBN":9781783288250,
+   "year":2016,
+   "type": "book",
+   "pages": 344,
    "misc": "(Technical Reviewer)"
  },
  {"authors":
