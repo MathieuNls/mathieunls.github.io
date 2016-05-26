@@ -217,7 +217,7 @@ Vous pouvez aussi vous référer au site de Danny Dig sur le refactoring [ici](h
 
 ### Exemple de Refactoring dans NetBeans
 
-Télécharger le projet [INF2015_Refactoring](http://mathieu-nayrolles.com/INF2015/semaine4/). Déziper-le puis importer le dans NetBeans
+Télécharger le projet [INF2015_Refactoring](/media/INF2015_Refactoring.zip). Déziper-le puis importer le dans NetBeans
 
 *   Franciser les param de Etudiants. (CTRL+R)
 *   Remonter date de naissance dans Humain (Pull Up), les getters/setters aussi.
@@ -230,7 +230,7 @@ Télécharger le projet [INF2015_Refactoring](http://mathieu-nayrolles.com/INF20
 
 ### Projet Final
 
-La correction [ICI !](INF2015_Refactoring-correction.zip)
+La correction [ICI !](/media/INF2015_Refactoring-correction.zip)
 
 ## Mais comment je fais pour les détecter ? Pour savoir qu'ils sont là ?
 
