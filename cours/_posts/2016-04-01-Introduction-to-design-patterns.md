@@ -386,6 +386,7 @@ Quels type d'impression ? (Papier (A4,A3,A2) ou PDF(A4,A3,A2))
 
 <iframe src="http://docs.google.com/gview?url=https://docs.google.com/gview?url=http://math.co.de/media/DesignPatternsAbuse.pdf&embedded=true" style="width:718px; height:700px;" frameborder="0"></iframe>
 
+* Voir aussi [Smells & Antipatterns](https://math.co.de/cours/Introduction-to-smells/)
 
 # Design Patterns For The Real World
 
