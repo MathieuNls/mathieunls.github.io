@@ -381,3 +381,8 @@ Quels type d'impression ? (Papier (A4,A3,A2) ou PDF(A4,A3,A2))
 
 *   Proxy
 *   Abstract Factory
+*   
+
+# Design Patterns For The Real World
+
+<iframe src="https://docs.google.com/presentation/d/18XVrS3XccMcqUgd6z6A5SLcCPhRx268BEHm2-oj7ltA/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
