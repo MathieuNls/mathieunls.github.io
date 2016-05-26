@@ -20,7 +20,7 @@ Souvent, les problèmes profond liés au code smell ne sont pas révélés lors 
 
 Une liste non exhaustive decodes smells, ceux identifiés par Fowler sont en gris.
 
-![](eXia1.png)
+![](/images/eXia1.png)
 
 ## Anti-Patterns
 
@@ -37,7 +37,7 @@ Les patrons de sont de bonnes pratique pour résoudre des problèmes récurrent.
 *   Moral hazard: Insulating a decision-maker from the consequences of his or her decision
 *   Mushroom management: Keeping employees uninformed and misinformed; employees are described as being kept in the dark and fed manure, left to stew, and finally canned
 *   Stovepipe or Silos: A structure that supports mostly up-down flow of data but inhibits cross organizational communication
-*   Vendor lock-in: Making a system excessively dependent on an externally supplied component<sup id="cite_ref-4" class="reference">[<span>[</span>4<span>]</span>](#cite_note-4)</sup>
+*   Vendor lock-in: Making a system excessively dependent on an externally supplied component
 
 #### Conduite de projet
 
@@ -45,8 +45,8 @@ Les patrons de sont de bonnes pratique pour résoudre des problèmes récurrent.
 *   Death march: Everyone knows that the project is going to be a disaster – except the CEO – so the truth is hidden to prevent immediate cancellation of the project - (although the CEO often knows and does it anyway to maximize profit). However, the truth remains hidden and the project is artificially kept alive until the Day Zero finally comes ("Big Bang"). Alternative definition: Employees are pressured to work late nights and weekends on a project with an unreasonable deadline.
 *   Groupthink: During groupthink, members of the group avoid promoting viewpoints outside the comfort zone of consensus thinking
 *   Overengineering: Spending resources making a project more robust and complex than is needed
-*   Scope Creep: Uncontrolled changes or continuous growth in a project’s scope, or adding new features to the project after the original requirements have been drafted and accepted. (Also known as requirement creep and [feature creep](/wiki/Feature_creep "Feature creep").)
-*   >Smoke and mirrors: Demonstrating unimplemented functions as if they were already implemented
+*   Scope Creep: Uncontrolled changes or continuous growth in a project’s scope, or adding new features to the project after the original requirements have been drafted and accepted. 
+*   Smoke and mirrors: Demonstrating unimplemented functions as if they were already implemented
 *   Software bloat: Allowing successive versions of a system to demand ever more resources
 
 #### Design
@@ -80,15 +80,15 @@ Les patrons de sont de bonnes pratique pour résoudre des problèmes récurrent.
 
 #### Spécifique SOA
 
-*   Multi Service also known as God Object corresponds to a service that implements a multitude of methods related to different business and technical abstractions. This service aggregates too many methods into a single service, such a service is not easily reusable because of the low cohesion of its methods and is often unavailable to end-users because of its overload, which may induce a high response time [17].
-*   Tiny Service is a small service with few methods, which only implements part of an abstraction. Such service often requires several coupled services to be used together, resulting in higher development complexity and reduced usability. In the extreme case, a Tiny Service will be limited to one method, resulting in many services that implement an overall set of requirements [17].
-*   Sand Pile is also known as Fine-Grained Services. It appears when a service is composed by multiple smaller services sharing common data. It thus has a high data cohesion. The common data shared may be located in a Data Service antipattern (see below) [2].
-*   Chatty Service corresponds to a set of services that exchange a lot of small data of primitive types, usually with a Data Service antipattern. The Chatty Service is also characterized by a high number of method invocations. Chatty Services chat a lot with each other [17].
-*   The Knot is a set of very low cohesive services, which are tightly coupled. These services are thus less reusable. Due to this complex architecture, the availability of these services may be low, and their response time high [8].
-*   Nobody Home corresponds to a service, defined but actually never used by clients. Thus, the methods from this service are never invoked, even though it may be coupled to other services. Yet, it still requires deployment and management, despite of its non usage [15].
-*   Duplicated Service, a.k.a. The Silo Approach introduced by IBM, corresponds to a set of highly similar services. Because services are implemented multiple times as a result of the silo approach, there may have common or identical methods with the same names and-or parameters [14].
+*   Multi Service also known as God Object corresponds to a service that implements a multitude of methods related to different business and technical abstractions. This service aggregates too many methods into a single service, such a service is not easily reusable because of the low cohesion of its methods and is often unavailable to end-users because of its overload, which may induce a high response time.
+*   Tiny Service is a small service with few methods, which only implements part of an abstraction. Such service often requires several coupled services to be used together, resulting in higher development complexity and reduced usability. In the extreme case, a Tiny Service will be limited to one method, resulting in many services that implement an overall set of requirements.
+*   Sand Pile is also known as Fine-Grained Services. It appears when a service is composed by multiple smaller services sharing common data. It thus has a high data cohesion. The common data shared may be located in a Data Service antipattern (see below).
+*   Chatty Service corresponds to a set of services that exchange a lot of small data of primitive types, usually with a Data Service antipattern. The Chatty Service is also characterized by a high number of method invocations. Chatty Services chat a lot with each other.
+*   The Knot is a set of very low cohesive services, which are tightly coupled. These services are thus less reusable. Due to this complex architecture, the availability of these services may be low, and their response time high.
+*   Nobody Home corresponds to a service, defined but actually never used by clients. Thus, the methods from this service are never invoked, even though it may be coupled to other services. Yet, it still requires deployment and management, despite of its non usage.
+*   Duplicated Service, a.k.a. The Silo Approach introduced by IBM, corresponds to a set of highly similar services. Because services are implemented multiple times as a result of the silo approach, there may have common or identical methods with the same names and-or parameters.
 *   Bottleneck Service is a service that is highly used by other services or clients. It has a high incoming and outgoing coupling. Its response time can be high because it may be used by too many external clients, for which clients may need to wait to get access to the service. Moreover, its availability may also be low due to the traffic.
-*   Service Chain a.k.a. Message Chain [26] in OO systems corresponds to a chain of services. The Service Chain appears when clients request consecutive service invocations to fulfill their goals. This kind of dependency chain reflects the subsequent invocation of services. Data Service, a.k.a. Data Class [26] in OO systems, corresponds to a service that contains mainly accessor methods, i.e., getters and setters. In the distributed applications, there can be some services that may only perform some simple information retrieval or data access to such services. Data Services contain usually accessor methods with small parameters of primitive types. Such service has a high data cohesion.
+*   Service Chain a.k.a. Message Chain in OO systems corresponds to a chain of services. The Service Chain appears when clients request consecutive service invocations to fulfill their goals. This kind of dependency chain reflects the subsequent invocation of services. Data Service, a.k.a. Data Class in OO systems, corresponds to a service that contains mainly accessor methods, i.e., getters and setters. In the distributed applications, there can be some services that may only perform some simple information retrieval or data access to such services. Data Services contain usually accessor methods with small parameters of primitive types. Such service has a high data cohesion.
 
 #### Programmation
 
@@ -102,7 +102,7 @@ Les patrons de sont de bonnes pratique pour résoudre des problèmes récurrent.
 *   Coding by exception: Adding new code to handle each special case as it is recognized
 *   Error hiding: Catching an error message before it can be shown to the user and either showing nothing or showing a meaningless message. Also can refer to erasing the Stack trace during exception handling, which can hamper debugging.
 *   Hard code: Embedding assumptions about the environment of a system in its implementation
-*   Lava flow: Retaining undesirable (redundant or low-quality) code because removing it is too expensive or has unpredictable consequences[5][6]
+*   Lava flow: Retaining undesirable (redundant or low-quality) code because removing it is too expensive or has unpredictable consequences
 *   Loop-switch sequence: Encoding a set of sequential steps using a switch within a loop statement
 *   Magic numbers: Including unexplained numbers in algorithms
 *   Magic strings: Including literal strings in code, for comparisons, as event types etc.
