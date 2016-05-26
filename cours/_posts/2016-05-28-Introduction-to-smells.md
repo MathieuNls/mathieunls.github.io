@@ -5,10 +5,6 @@ tags:
 - smell
 - anti-patterns
 description: An introduction to smell
-image:
-  feature: https://mwidlake.files.wordpress.com/2011/08/silver-bullet.jpg
-  credit: Orcale
-  creditlink: https://mwidlake.wordpress.com/2011/08/05/friday-philosophy-oracle-performance-silver-bullet/
 excerpt: Smells and anti-patterns are bad solutions to knwon problems
 ---
 {% include _toc.html %}
