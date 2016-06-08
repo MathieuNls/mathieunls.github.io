@@ -110,12 +110,63 @@ Implement a function that reads the computed matrix for the result.
 Finally, we know what is the maximum of money we can make given the preconditions. However, we still don't know which stock to buy.
 Implement a function that reads the computed matrix for the amount of stock to buy.
 
+# Simulated Annealing
+
+Simulated annealing (SA) is a probabilistic technique for approximating the global optimum of a given function. Specifically, it is a metaheuristic to approximate global optimization in a large search space. It is often used when the search space is discrete (e.g., all tours that visit a given set of cities). For problems where finding the precise global optimum is less important than finding an acceptable local optimum in a fixed amount of time, simulated annealing may be preferable to alternatives such as brute-force search or gradient descent. [^6]
+
+[^6]: <https://www.wikiwand.com/en/Simulated_annealing>
+
+*At each step, the SA heuristic considers some neighbouring state s' of the current state s, and probabilistically decides between moving the system to state s' or staying in state s. These probabilities ultimately lead the system to move to states of lower energy. Typically this step is repeated until the system reaches a state that is good enough for the application, or until a given computation budget has been exhausted.* [^6]
+
+{% highlight js %}
+Let s = s0
+For k = 0 through kmax (exclusive):
+T ← temperature(k ∕ kmax)
+Pick a random neighbour, snew ← neighbour(s)
+If P(E(s), E(snew), T) ≥ random(0, 1), move to the new state:
+s ← snew
+Output: the final state s
+{% endhighlight %}
+
+## Exo
+
+* n-queen problem
+
+# Genetic algorithm
+
+*In the field of artificial intelligence, a genetic algorithm (GA) is a search heuristic that mimics the process of natural selection. This heuristic (also sometimes called a metaheuristic) is routinely used to generate useful solutions to optimization and search problems.Genetic algorithms belong to the larger class of evolutionary algorithms (EA), which generate solutions to optimization problems using techniques inspired by natural evolution, such as inheritance, mutation, selection and crossover.*[^3]
+
+[^3]: <https://www.wikiwand.com/en/Genetic_algorithm>
+
+## Initialisation
+
+*The population size depends on the nature of the problem, but typically contains several hundreds or thousands of possible solutions. Often, the initial population is generated randomly, allowing the entire range of possible solutions (the search space). Occasionally, the solutions may be "seeded" in areas where optimal solutions are likely to be found.*[^3]
+ 
+## Selection And Reproduction
+
+At each generation the top n% -- according to the fitness function -- of the current pool is selected to breed a new generation.
+
+*For instance, in the knapsack problem one wants to maximize the total value of objects that can be put in a knapsack of some fixed capacity. A representation of a solution might be an array of bits, where each bit represents a different object, and the value of the bit (0 or 1) represents whether or not the object is in the knapsack. Not every such representation is valid, as the size of objects may exceed the capacity of the knapsack. The fitness of the solution is the sum of values of all objects in the knapsack if the representation is valid, or 0 otherwise.*[^3]
+
+Parents breed the new generation using crossover and mutation. 
+*In genetic algorithms, crossover is a genetic operator used to vary the programming of a chromosome or chromosomes from one generation to the next. It is analogous to reproduction and biological crossover, upon which genetic algorithms are based. Cross over is a process of taking more than one parent solutions and producing a child solution from them.* [^4]
+*Mutation is a genetic operator used to maintain genetic diversity from one generation of a population of genetic algorithm chromosomes to the next. It is analogous to biological mutation. Mutation alters one or more gene values in a chromosome from its initial state.*[^5]
+
+[^4]: <https://www.wikiwand.com/en/Crossover_(genetic_algorithm)>
+[^5]: <https://www.wikiwand.com/en/Mutation_(genetic_algorithm)>
+
+## Exo
+
+- Solve the knapsack problem
+- Solve a TSP problem
+- Prisoner Problem
+
 # Simplex algorithm
 
 *In mathematical optimization, Dantzig's simplex algorithm (or simplex method) is a popular algorithm for linear programming. The journal Computing in Science and Engineering listed it as one of the top 10 algorithms of the twentieth century.
-The name of the algorithm is derived from the concept of a simplex and was suggested by T. S. Motzkin. Simplices are not actually used in the method, but one interpretation of it is that it operates on simplicial cones, and these become proper simplices with an additional constraint. The simplicial cones in question are the corners (i.e., the neighborhoods of the vertices) of a geometric object called a polytope. The shape of this polytope is defined by the constraints applied to the objective function.* [^3]
+The name of the algorithm is derived from the concept of a simplex and was suggested by T. S. Motzkin. Simplices are not actually used in the method, but one interpretation of it is that it operates on simplicial cones, and these become proper simplices with an additional constraint. The simplicial cones in question are the corners (i.e., the neighborhoods of the vertices) of a geometric object called a polytope. The shape of this polytope is defined by the constraints applied to the objective function.* [^5]
 
-[^3]: <https://www.wikiwand.com/en/Simplex_algorithm>
+[^5]: <https://www.wikiwand.com/en/Simplex_algorithm>
 
 To resolve a linear problem with the simplex method, we'll use simplex tableau.
 Simplex tableaus are matrices where the first row is the objective and the remaining rows the constraints.
