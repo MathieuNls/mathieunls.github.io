@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Typescript pitfalls: Type casting and JSON
+title: Typescript pitfalls&#58; Type casting and JSON
 tags:
 - javascript
 - typescript
 - json
 - api
-description: Typescript pitfalls: Type casting and JSON
+description: Typescript pitfalls&#58; Type casting and JSON
 ---
 
 I am currently writing two books on Angular2 for Packt Publishing ([Angular 2 Design Patterns and Best Practices](https://www.packtpub.com/web-development/angular-2-design-patterns-and-best-practices) and Mastering Angular2).
