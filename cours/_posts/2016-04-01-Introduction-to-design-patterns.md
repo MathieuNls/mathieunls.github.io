@@ -78,7 +78,7 @@ Les patrons de conceptions sont des solutions éfficaces à des problêmes connu
 
 #### Open Close principle
 
-Les entités d'un logiciel tel que les classes ou les modules devraient être OUVERT extension mais FERMÉ pour modification
+Les entités d'un logiciel tel que les classes ou les modules devraient être OUVERT en extension mais FERMÉ pour modification
 
 ![](http://www.oodesign.com/images/stories/ocp.bad.gif) ![](http://www.oodesign.com/images/stories/ocp.good.gif)
 
