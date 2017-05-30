@@ -36,7 +36,7 @@ y - w <= 10
 
 In this practical introduction, we'll see how to use the Knapsack[^2] and the Simplex[^3] algorithms.
 
-<iframe src="https://docs.google.com/gview?url=https://math.co.de/media/DarwinIT.pdf&embedded=true" style="width:718px; height:700px;" frameborder="0"></iframe>
+<iframe src="https://docs.google.com/gview?url=http://mathieunls.github.io/media/DarwinIT.pdf&embedded=true" style="width:718px; height:700px;" frameborder="0"></iframe>
 
 # Knapsack
 
